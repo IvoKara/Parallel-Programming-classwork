@@ -27,6 +27,7 @@ namespace Lab2._1
 
         private async void SlowWork(object sender, RoutedEventArgs e)
         {
+            btn.IsEnabled = false;
 
             Random rnd = new Random();
 
@@ -35,6 +36,8 @@ namespace Lab2._1
                 rtb.AppendText(rnd.Next(100).ToString() + "\t");
                 await Task.Delay(150);
             }
+
+            btn.IsEnabled = true;
         }
     }
 }
