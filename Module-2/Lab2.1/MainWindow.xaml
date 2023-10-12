@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab2._1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="551" Width="800">
     <Grid>
-
+        <Label FontSize="16" Content="In order to fire the slow event:" HorizontalAlignment="Left" Margin="44,31,0,0" VerticalAlignment="Top"/>
+        <Button Name="btn" FontSize="16" Content="Click here" HorizontalAlignment="Left" Margin="44,62,0,0" VerticalAlignment="Top" Height="45" Width="88" Click="SlowWork" RenderTransformOrigin="0.584,-1.24"/>
+        <RichTextBox Name="rtb" Width="706" HorizontalAlignment="Left" Margin="44,166,0,76"/>
+        <Label FontSize="16" Content="Generated numbers are here:" HorizontalAlignment="Left" Margin="44,135,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

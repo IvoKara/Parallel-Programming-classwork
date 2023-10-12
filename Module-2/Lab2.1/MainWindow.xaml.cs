@@ -24,5 +24,17 @@ namespace Lab2._1
         {
             InitializeComponent();
         }
+
+        private async void SlowWork(object sender, RoutedEventArgs e)
+        {
+
+            Random rnd = new Random();
+
+            for (int i = 0; i < 100; i++)
+            {
+                rtb.AppendText(rnd.Next(100).ToString() + "\t");
+                await Task.Delay(150);
+            }
+        }
     }
 }
