@@ -11,5 +11,8 @@
         <Button Name="btn" FontSize="16" Content="Click here" HorizontalAlignment="Left" Margin="44,62,0,0" VerticalAlignment="Top" Height="45" Width="88" Click="SlowWork" RenderTransformOrigin="0.584,-1.24"/>
         <RichTextBox Name="rtb" Width="706" HorizontalAlignment="Left" Margin="44,166,0,76"/>
         <Label FontSize="16" Content="Generated numbers are here:" HorizontalAlignment="Left" Margin="44,135,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="16" Content="Time stats:" HorizontalAlignment="Left" Margin="370,31,0,0" VerticalAlignment="Top"/>
+        <Label Name="timeStart" FontSize="12" HorizontalAlignment="Left" Margin="370,69,0,0" VerticalAlignment="Top"/>
+        <Label Name="timeEnd" FontSize="12" HorizontalAlignment="Left" Margin="370,100,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

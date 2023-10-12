@@ -31,11 +31,15 @@ namespace Lab2._1
 
             Random rnd = new Random();
 
+            timeStart.Content = DateTime.Now.ToString("HH:mm:ss");
+
             for (int i = 0; i < 100; i++)
             {
                 rtb.AppendText(rnd.Next(100).ToString() + "\t");
                 await Task.Delay(150);
             }
+
+            timeEnd.Content = DateTime.Now.ToString("HH:mm:ss");
 
             btn.IsEnabled = true;
         }
