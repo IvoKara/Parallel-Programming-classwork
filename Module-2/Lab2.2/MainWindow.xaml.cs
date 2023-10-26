@@ -24,5 +24,18 @@ namespace Lab2._2
         {
             InitializeComponent();
         }
+
+        private async void FindAll(object sender, RoutedEventArgs e)
+        {
+            var ids = textBox
+                .Text
+                .Split(' ')
+                .Select(str => Convert.ToInt32(str))
+                .ToArray();
+
+            var customers = await CustomersList.FindAllByIds(ids);
+
+            resultBox.ItemsSource = customers;
+        }
     }
 }

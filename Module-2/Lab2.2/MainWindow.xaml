@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button Content="Find All" Click="FindAll" HorizontalAlignment="Left" Margin="66,105,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="textBox" HorizontalAlignment="Left" Margin="66,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Height="27"/>
+        <Label Content="Ids:" HorizontalAlignment="Left" Margin="68,30,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="resultBox" Margin="68,149,56,10"/>
 
     </Grid>
 </Window>
