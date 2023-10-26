@@ -22,5 +22,10 @@ namespace Lab2._2
             Address = address;
             NumberOfOrders = numberOforders;
         }
+
+        public override string ToString()
+        {
+            return $"[Name = {Name}, Address = {Address}, Number of orders = {NumberOfOrders}]";
+        }
     }
 }
