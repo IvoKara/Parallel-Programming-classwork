@@ -17,6 +17,7 @@ public class App {
 
 	enum Downloader {
 		INSTANCE;
+
 		private Semaphore semaphore = new Semaphore(3, true);
 
 		public void downloadData() {
